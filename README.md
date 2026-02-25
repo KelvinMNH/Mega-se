@@ -28,11 +28,11 @@ Acesse a versão de demonstração do projeto hospedada no Cloudflare Pages:
 O projeto foi refatorado para ter uma arquitetura modular por loteria, facilitando a manutenção e organização:
 
 - `public/index.html`: Portal principal para seleção de loteria.
-- `public/mega-sena.html`: Interface do simulador da Mega-Sena.
-- `public/quina.html`: Interface do simulador da Quina.
-- `public/css/`: Diretório de arquivos de estilo modulares (`mega-sena.css` e `quina.css`).
+- `public/pages/mega-sena.html`: Interface do simulador da Mega-Sena.
+- `public/pages/quina.html`: Interface do simulador da Quina.
+- `public/css/`: Diretório de arquivos de estilo (`style.css` e futuros arquivos modulares).
 - `public/js/`: Diretório com a lógica de cada loteria (`mega-sena.js` e `quina.js`).
-- `server.js`: Servidor Express simples que serve os arquivos estáticos e fornece um Proxy de API para evitar bloqueios de CORS.
+- `src/server.js`: Servidor Express simples que serve os arquivos estáticos e fornece um Proxy de API para evitar bloqueios de CORS.
 - `package.json`: Definição do projeto e dependências.
 
 ## Notas Técnicas

@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 
 // Servir arquivos estáticos da pasta 'public'
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Rota de Proxy para a API (Mega Sena e Quina)
 // Necessária para evitar problemas de HTTPS/CORS no navegador cliente

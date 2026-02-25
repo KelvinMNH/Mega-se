@@ -205,19 +205,7 @@ textarea {
 /* =========================================
    4. HOME PAGE (Lista de Rifas)
    ========================================= */
-.banner-wrapper {
-    background: linear-gradient(to right, #050516 50%, #2f2db8 50%);
-    margin-bottom: 5px;
-    height: 150px;
-}
 
-.hero-banner {
-    background: url('images/banner.png') no-repeat center;
-    background-size: 650px;
-    color: white;
-    text-align: center;
-    height: 150px;
-}
 
 .rifas-grid {
     display: grid;

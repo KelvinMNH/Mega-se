@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Sena - Simulador Canhoto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         :root {
             --primary-color: #209869;
@@ -1085,7 +1085,7 @@
 
         <header class="page-header">
             <div class="header-title">
-                <h1><span id="headerCloverIcon">🍀</span> <span id="headerTitleText">Mega Sena</span> <small
+                <h1><span id="headerCloverIcon">🍀</span> <span id="headerTitleText">Quina</span> <small
                         style="font-size:0.5em;color:#999; margin-left:10px;">Simulador</small></h1>
             </div>
             <div class="lottery-selector">
@@ -1105,7 +1105,7 @@
                             <div class="clover-icon" id="slipCloverIcon">🍀</div>
                             <div class="brand-text">
                                 <span class="brand-subtitle">Sorteador</span>
-                                <h2 id="slipTitleText">mega&#8209;sena</h2>
+                                <h2 id="slipTitleText">quina</h2>
                             </div>
                         </div>
                     </div>
@@ -1172,11 +1172,12 @@
                     <div class="history-title">
                         <span>ℹ️ Premiações do Jogo</span>
                     </div>
-                    <div id="prizeInfoText" style="font-size: 0.85em; color: #555; line-height: 1.5; padding: 10px 0;">
-                        <strong>Mega-Sena:</strong><br>
-                        • <strong>Sena (6 acertos):</strong> Prêmio máximo.<br>
-                        • <strong>Quina (5 acertos):</strong> Prêmio intermediário.<br>
-                        • <strong>Quadra (4 acertos):</strong> Prêmio menor.
+                    <div class="prize-info" id="prizeInfoText">
+                        <strong>Quina:</strong><br>
+                        • <strong>Quina (5 acertos):</strong> Prêmio principal.<br>
+                        • <strong>Quadra (4 acertos):</strong> Prêmio grande.<br>
+                        • <strong>Terno (3 acertos):</strong> Prêmio intermediário.<br>
+                        • <strong>Duque (2 acertos):</strong> Prêmio menor.
                     </div>
                 </div>
             </div>
@@ -1207,7 +1208,7 @@
         </div>
     </div>
 
-    <script src="js/mega-sena.js"></script>
+    <script src="../js/quina.js"></script>
 </body>
 
 </html>
