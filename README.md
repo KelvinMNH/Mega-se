@@ -1,11 +1,16 @@
-# Simulador Mega Sena
+# Portal Loterias - Simulador
 
-Este é um projeto isolado para o Simulador e Verificador da Mega Sena.
+Este é um projeto para simular e gerenciar jogos das loterias **Mega-Sena** e **Quina**. 
 
-## Como Rodar
+## Demonstração
+
+Acesse a versão de demonstração do projeto hospedada no Cloudflare Pages:
+[megase.pages.dev](https://megase.pages.dev)
+
+## Como Rodar Localmente
 
 1. **Instalar Dependências**:
-   Abra o terminal na pasta deste projeto (`mega-sena-isolado`) e execute:
+   Abra o terminal na pasta do projeto e execute:
    ```bash
    npm install
    ```
@@ -18,14 +23,24 @@ Este é um projeto isolado para o Simulador e Verificador da Mega Sena.
 3. **Acessar**:
    Abra o navegador em [http://localhost:3000](http://localhost:3000)
 
-## Estrutura
+## Estrutura do Projeto
 
-- `public/index.html`: O front-end da aplicação (antigo mega.html).
-- `public/style.css`: Estilos globais.
-- `server.js`: Servidor Express simples que serve os arquivos e fornece o Proxy de API.
+O projeto foi refatorado para ter uma arquitetura modular por loteria, facilitando a manutenção e organização:
+
+- `public/index.html`: Portal principal para seleção de loteria.
+- `public/mega-sena.html`: Interface do simulador da Mega-Sena.
+- `public/quina.html`: Interface do simulador da Quina.
+- `public/css/`: Diretório de arquivos de estilo modulares (`mega-sena.css` e `quina.css`).
+- `public/js/`: Diretório com a lógica de cada loteria (`mega-sena.js` e `quina.js`).
+- `server.js`: Servidor Express simples que serve os arquivos estáticos e fornece um Proxy de API para evitar bloqueios de CORS.
 - `package.json`: Definição do projeto e dependências.
 
-## Notas
+## Notas Técnicas
 
-- O projeto requer **Node.js 18+** para o funcionamento correto do `fetch` nativo no servidor.
-- A API externa usada é a `loteriascaixa-api.herokuapp.com`.
+- O projeto requer **Node.js 18+** ou superior para o funcionamento correto do `fetch` nativo no servidor.
+- A API externa usada nativamente e pelo servidor proxy é fornecida por `loteriascaixa-api.herokuapp.com`. O proxy local evita erros de acessibilidade e CORS durante o desenvolvimento e produção.
+
+## Licença e Uso
+
+Este repositório tem fins estritamente **avaliativos e educacionais** (demonstração para portfólio). 
+É **expressamente proibido o uso comercial** deste código ou da marca e propriedades pertencentes à Caixa Econômica Federal.
